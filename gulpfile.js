@@ -4,6 +4,7 @@ var sass = require('gulp-sass')
 var rename = require('gulp-rename')
 var connect = require('gulp-connect')
 var imagemin = require('gulp-imagemin')
+var uglify = require('gulp-uglify')
 
 var scssFiles = ['./src/scss/*.scss'] //sass src
 var cssDest = './src/css' //css dest
@@ -58,4 +59,10 @@ gulp.task('imagemin', function(){
  .pipe(gulp.dest('public/images'))
 })
 
-gulp.task('default', ['htmlmin', 'sassDev', 'sassProd', 'imagemin', 'connect', 'watch'])
+gulp.task('uglify', function(){
+	return gulp.src('src/*.js')
+	.pipe(uglify())
+ .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('default', ['htmlmin', 'uglify', 'sassDev', 'sassProd', 'imagemin', 'connect', 'watch'])

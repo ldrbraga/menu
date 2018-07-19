@@ -1,3 +1,74 @@
-@import '_base.scss';
-@import '_layout.scss';
-@import '_module.scss';
+@import "_fonts.scss";
+@import "_base.scss";
+@import "_layout.scss";
+@import "_module.scss";
+
+.header {
+  .header__logo--link {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    z-index: 9;
+  }
+  .header__logo--img {
+    width: 210px;
+    height: 30px;
+  }
+  .header__search--link {
+    position: fixed;
+    top: 21px;
+    right: 145px;
+  }
+  .header__search--img {
+    width: 20.5px;
+    height: 20.5px;
+  }
+ 
+  .header__menu--openBtn{
+   position: fixed;
+   z-index: 5;
+   top: 15px;
+   right: 15px;
+  }
+  .overlay{
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 0;
+   height: 100%;
+   background: #000;
+   overflow-x: hidden; 
+   z-index: 5;
+   transition: all 0.9s; 
+  }
+  .header__menu--overlay--content{
+   position: relative;
+   top: 25%;
+   width: 100%;
+  }
+  .header__menu--closeBtn{
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   font-weight: bold;
+  }
+  .overlay a{
+   padding: 10px;
+   color: #ccc;
+   font-size: 50px;
+   text-decoration: none;
+   display: block;
+   font: {
+    family: "Versa Pro Bold"
+   }
+  }
+  .overlay a:hover{
+   color: #fff; 
+  }
+}
+
+
+
+section{
+ min-height: 2000px;
+}
