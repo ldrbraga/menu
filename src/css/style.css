@@ -123,8 +123,9 @@ table {
 
 .header .header__menu--overlay--content {
   position: relative;
-  top: 25%;
+  top: 13%;
   width: 100%;
+  font-size: 70px;
 }
 
 .header .header__menu--closeBtn {
@@ -132,16 +133,15 @@ table {
   top: 15px;
   right: 15px;
   font-weight: bold;
+  font-size: 40px;
   z-index: 9;
 }
 
 .header .overlay a {
   padding: 10px;
   color: #ccc;
-  font-size: 50px;
   text-decoration: none;
   display: block;
-  font-family: "Versa Pro Bold";
 }
 
 .header .overlay a:hover {

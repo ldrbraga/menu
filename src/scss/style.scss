@@ -42,25 +42,25 @@
   }
   .header__menu--overlay--content {
     position: relative;
-    top: 25%;
+    top: 13%;
     width: 100%;
+    font-size: 70px;
   }
   .header__menu--closeBtn {
     position: absolute;
     top: 15px;
     right: 15px;
-    font-weight: bold;
+    font: {
+     weight: bold;
+     size: 40px;
+    } 
     z-index: 9;
   }
-  .overlay a {
+  .overlay a{
     padding: 10px;
     color: #ccc;
-    font-size: 50px;
     text-decoration: none;
     display: block;
-    font: {
-      family: "Versa Pro Bold";
-    }
   }
   .overlay a:hover {
     color: #fff;
