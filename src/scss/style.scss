@@ -23,52 +23,54 @@
     width: 20.5px;
     height: 20.5px;
   }
- 
-  .header__menu--openBtn{
-   position: fixed;
-   z-index: 5;
-   top: 15px;
-   right: 15px;
+
+  .header__menu--openBtn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
   }
-  .overlay{
-   position: fixed;
-   top: 0;
-   right: 0;
-   width: 0;
-   height: 100%;
-   background: #000;
-   overflow-x: hidden; 
-   z-index: 5;
-   transition: all 0.9s; 
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    overflow-x: hidden;
+    z-index: 5;
+    transition: all 0.9s;
   }
-  .header__menu--overlay--content{
-   position: relative;
-   top: 25%;
-   width: 100%;
+  .header__menu--overlay--content {
+    position: relative;
+    top: 25%;
+    width: 100%;
   }
-  .header__menu--closeBtn{
-   position: absolute;
-   top: 15px;
-   right: 15px;
-   font-weight: bold;
+  .header__menu--closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: bold;
+    z-index: 9;
   }
-  .overlay a{
-   padding: 10px;
-   color: #ccc;
-   font-size: 50px;
-   text-decoration: none;
-   display: block;
-   font: {
-    family: "Versa Pro Bold"
-   }
+  .overlay a {
+    padding: 10px;
+    color: #ccc;
+    font-size: 50px;
+    text-decoration: none;
+    display: block;
+    font: {
+      family: "Versa Pro Bold";
+    }
   }
-  .overlay a:hover{
-   color: #fff; 
+  .overlay a:hover {
+    color: #fff;
+  }
+  .header__menu--img{
+   width: 40px;
+   height: 40px;
   }
 }
 
-
-
-section{
- min-height: 2000px;
+section {
+  min-height: 2000px;
 }

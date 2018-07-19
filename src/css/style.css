@@ -105,7 +105,6 @@ table {
 
 .header .header__menu--openBtn {
   position: fixed;
-  z-index: 5;
   top: 15px;
   right: 15px;
 }
@@ -133,6 +132,7 @@ table {
   top: 15px;
   right: 15px;
   font-weight: bold;
+  z-index: 9;
 }
 
 .header .overlay a {
@@ -146,6 +146,11 @@ table {
 
 .header .overlay a:hover {
   color: #fff;
+}
+
+.header .header__menu--img {
+  width: 40px;
+  height: 40px;
 }
 
 section {
